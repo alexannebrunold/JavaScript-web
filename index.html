@@ -64,9 +64,6 @@
   //Exercice 7 - let nombre1 = 5;
   let nombre2 = 3;
 
-
-
-
   // Tapez votre code ici (sans rien modifier d'autre !)
   const stockNombre1 = nombre1;
   let nombre1 = nombre2;
@@ -74,6 +71,74 @@
 
   console.log(nombre1); // Doit afficher 3
   console.log(nombre2); // Doit afficher 5
+
+  //Exercice 8 - Jour suivant
+
+  /*const jourActuel = "Coucou";
+let jourSuivant = " ";
+
+// Ajoutez votre code ici pour définir jourSuivant en fonction de jourActuel
+
+if (jourActuel === "Lundi") {
+  jourSuivant = "Mardi";
+}
+else if (jourActuel === "Mardi") {
+  jourSuivant = "Mercredi";
+}
+else if (jourActuel === "Mercredi") {
+  jourSuivant = "Jeudi";
+}
+else if (jourActuel === "Jeudi") {
+  jourSuivant = "Vendredi";
+}
+else if (jourActuel === "Vendredi") {
+  jourSuivant = "Samedi";
+}
+else if (jourActuel === "Samedi") {
+  jourSuivant = "Dimanche";
+}
+else if (jourActuel === "Dimanche") {
+  jourSuivant = "Lundi";
+}
+
+else{
+  console.log("Je ne sais pas");
+}
+
+console.log(jourSuivant);*/
+
+
+//Switch 
+
+const jourActuel = "Mardi";
+let jourSuivant = " ";
+
+switch (jourActuel) {
+  case "Lundi":
+    console.log("Mardi");
+    break;
+  case "Mardi":
+    console.log("Mercredi");
+    break;
+  case "Mercredi":
+    console.log("Jeudi");
+    break;
+  case "Jeudi":
+    console.log("Vendredi");
+    break;
+    case "Vendredi":
+    console.log("Samedi");
+    break;
+    case "Samedi":
+    console.log("Dimanche");
+    break;
+     case "Dimanche":
+    console.log("Lundi");
+    break;
+  default:
+    console.log("Je n'ai pas compris !");
+}
+
 
 </script>
 
