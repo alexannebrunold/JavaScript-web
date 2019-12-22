@@ -108,36 +108,62 @@ else{
 console.log(jourSuivant);*/
 
 
-//Switch 
+  //Switch 
 
-const jourActuel = "Mardi";
-let jourSuivant = " ";
+  const jourActuel = "Mardi";
+  let jourSuivant = " ";
 
-switch (jourActuel) {
-  case "Lundi":
-    console.log("Mardi");
-    break;
-  case "Mardi":
-    console.log("Mercredi");
-    break;
-  case "Mercredi":
-    console.log("Jeudi");
-    break;
-  case "Jeudi":
-    console.log("Vendredi");
-    break;
+  switch (jourActuel) {
+    case "Lundi":
+      console.log("Mardi");
+      break;
+    case "Mardi":
+      console.log("Mercredi");
+      break;
+    case "Mercredi":
+      console.log("Jeudi");
+      break;
+    case "Jeudi":
+      console.log("Vendredi");
+      break;
     case "Vendredi":
-    console.log("Samedi");
-    break;
+      console.log("Samedi");
+      break;
     case "Samedi":
-    console.log("Dimanche");
-    break;
-     case "Dimanche":
-    console.log("Lundi");
-    break;
-  default:
-    console.log("Je n'ai pas compris !");
-}
+      console.log("Dimanche");
+      break;
+    case "Dimanche":
+      console.log("Lundi");
+      break;
+    default:
+      console.log("Je n'ai pas compris !");
+  }
+
+  //Exercice 9 - Baccalauréat
+
+  const moyenne = 12;
+
+  // Ajoutez votre code ici
+
+  if (moyenne < 10) {
+    console.log("Le candidat est recalé");
+  }
+  else if (moyenne >= 10 && moyenne < 12) {
+    console.log("Le candidat est reçu");
+  }
+  else if (moyenne >= 12) {
+    console.log("Le candidat a une mention");
+  }
+  else {
+    console.log("Le candidat n'a pas le baccalauréat");
+  }
+
+  /*Afficher le résultat en fonction de la note
+  
+  If < 10 = 'Récalé'
+  else if moy > 10 && loy <12 = Reçu
+  else if >= 12 = mention
+  else = bisous*/
 
 
 </script>
