@@ -184,6 +184,34 @@ console.log(jourSuivant);*/
   Si heure === 23 alors heures deviens 0 et recommence;
   */
 
+  let heures = 23; // Faire varier cette variable entre 0 et 23
+  let minutes = 59; // faire varier cette variable entre 0 et 59
+  let secondes = 59; // faire varier cette variable entre 0 et 59
+
+  // Ajoutez votre code ici
+
+  if (secondes !== 59) {
+    secondes++;
+  }
+  else/*secondes === 59*/ {
+    secondes = 0;
+    //minutes++;
+  }
+
+  if (minutes !== 59) {
+    minutes++;
+  }
+  else {
+    minutes = 0;
+    if (heures < 23)
+      heures++;
+  }
+  if (heures === 23) {
+    heures = 0;
+  }
+
+
+  console.log("Il est" + " " + heures + "h" + minutes + "m" + secondes + "s")
 
 
 </script>
